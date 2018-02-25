@@ -22,7 +22,7 @@ gem 'activerecord', '~> 4.2.7.1'
 
 gem 'activesupport', '~> 4.2.7.1'
 
-gem 'pg'
+gem 'pg', '~> 0.18'
 
 gem 'rails_12factor', group: :production
 
