@@ -1,6 +1,7 @@
 
 default: &default
-  production:
+  adapter: postgresql
+  encoding: unicode
   encoding: utf8
   pool: 15
 
