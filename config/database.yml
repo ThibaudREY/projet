@@ -1,3 +1,18 @@
-production:
+
+default: &default
+  production:
   encoding: utf8
   pool: 15
+
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+staging:
+  <<: *default
+
+production:
+  <<: *default
