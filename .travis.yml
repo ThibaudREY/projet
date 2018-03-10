@@ -3,6 +3,7 @@ services:
 
 before_script:
   - psql -c 'create database travis;' -U postgres
+  - rake db:migrate
 
 language: ruby
 rvm:
