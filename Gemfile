@@ -54,3 +54,5 @@ group :assets do
 end
 
 gem 'formtastic-bootstrap'
+
+gem 'puma'
