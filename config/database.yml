@@ -4,7 +4,9 @@ default: &default
   encoding: unicode
   encoding: utf8
   pool: 15
-
+  host: localhost
+  username: agent
+  password: agent
 
 development:
   <<: *default

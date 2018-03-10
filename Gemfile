@@ -12,6 +12,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem 'formtastic', '~> 3.0'
+
 gem 'actionpack', '~> 4.2.7.1'
 
 gem 'actionview', '~> 4.2.7.1'
@@ -47,3 +49,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :assets do
+  gem 'bootstrap-sass'
+end
+
+gem 'formtastic-bootstrap'
