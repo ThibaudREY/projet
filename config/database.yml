@@ -9,7 +9,7 @@ development:
   <<: *default
 
 test:
-  adapter: sqlite3
+  <<: *default
 
 staging:
   <<: *default
