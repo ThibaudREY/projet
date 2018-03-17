@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :towns
   resources :students
   resources :students
   root 'welcome#index'

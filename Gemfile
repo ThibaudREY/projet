@@ -53,6 +53,8 @@ group :assets do
   gem 'bootstrap-sass'
 end
 
-gem 'formtastic-bootstrap'
+gem 'simple_form'
 
 gem 'puma'
+
+gem 'nominatim', '~> 0.0.6'

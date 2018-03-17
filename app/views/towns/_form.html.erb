@@ -1,0 +1,12 @@
+<%= semantic_form_for @town do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :city %>
+    <%= f.input :postcode %>
+    <%= f.input :latitude %>
+    <%= f.input :longitude %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

@@ -54,10 +54,10 @@ GEM
     crass (1.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    faraday (0.14.0)
+      multipart-post (>= 1.2, < 3)
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
-    formtastic-bootstrap (3.1.1)
-      formtastic (>= 3.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hike (1.2.3)
@@ -80,8 +80,12 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    nominatim (0.0.6)
+      faraday
+      multi_json
     pg (0.21.0)
     puma (3.11.3)
     rack (1.6.8)
@@ -127,6 +131,9 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.5.1)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -159,15 +166,16 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   formtastic (~> 3.0)
-  formtastic-bootstrap
   jbuilder (~> 2.0)
   jquery-rails
+  nominatim (~> 0.0.6)
   pg (~> 0.18)
   puma
   rails (~> 4.2.7.1)
   rails_12factor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  simple_form
   turbolinks
   uglifier (>= 1.3.0)
 

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @town.city %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @town.postcode %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @town.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @town.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_town_path(@town) %> |
+<%= link_to 'Back', towns_path %>
