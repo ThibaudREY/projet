@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17bedbc4-af65-4c95-91a2-57c263b49d65" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/projet.iml" afterPath="$PROJECT_DIR$/.idea/projet.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/formtastic.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change beforePath="$PROJECT_DIR$/app/models/town.rb" afterPath="$PROJECT_DIR$/app/models/town.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -73,8 +66,8 @@
       <file leaf-file-name="town.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/town.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="108">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -365,12 +358,12 @@
       <updated>1520665996824</updated>
       <workItem from="1520666005558" duration="12481000" />
       <workItem from="1520975820201" duration="1566000" />
-      <workItem from="1521275407011" duration="1363000" />
+      <workItem from="1521275407011" duration="1504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15410000" />
+    <option name="totallyTimeSpent" value="15551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1366" height="736" extended-state="6" />
@@ -630,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/town.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="108">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
         </state>
       </provider>
