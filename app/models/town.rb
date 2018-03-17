@@ -1,15 +1,14 @@
 class Town < ActiveRecord::Base
-
-  after_validation :geocode
-
+  before_validation :geocode
+  validates :city, :latitude, :longitude, :presence => true
   private
   def geocode
-    place = Nominatim.search.city(self.city).limit(1).address_details(true).first
-
-    self.latitude = place.latitude
-    self.longitude = place.longitude
-    self.postcode = place.address.postcode
-
+    places = Nominatim.search.city(self.city).limit(1).address_details(true)
+    if places && places.first
+      self.latitude = places.first.latitude
+      self.longitude = places.first.longitude
+      self.postcode = places.first.address.postcode
+    end
   end
 
 end
