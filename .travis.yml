@@ -3,17 +3,11 @@ services:
 
 env:
   - DB=postgresql
-
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
 before_script:
   - psql -c 'create database travis' -U postgres
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
 
-script:
-  - rake db:reset
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - rake
-
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+language: ruby
+rvm:
+ - 2.3.5
