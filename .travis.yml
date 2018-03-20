@@ -2,9 +2,6 @@ language: ruby
 rvm:
  - 2.3.5
 
-env:
-  global:
-    - CC_TEST_REPORTER_ID=5821733a348c2023a8c0aa2a79e6516f92d1d32d26c240329c5b88dc89f5601b
 services:
   - postgresql
 
@@ -21,5 +18,5 @@ script:
   - RAILS_ENV=test bundle exec rake
 
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT -t simplecov
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT -t simplecov -r 5821733a348c2023a8c0aa2a79e6516f92d1d32d26c240329c5b88dc89f5601b
 
