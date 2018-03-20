@@ -16,12 +16,6 @@ ActiveRecord::Schema.define(version: 20180317082311) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "agent", force: :cascade do |t|
-    t.string "first_name", limit: 20, null: false
-    t.string "last_name",  limit: 20, null: false
-    t.string "telephone",  limit: 50
-  end
-
   create_table "students", force: :cascade do |t|
     t.string   "name"
     t.string   "lastname"
@@ -37,12 +31,6 @@ ActiveRecord::Schema.define(version: 20180317082311) do
     t.float    "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "visiteur", force: :cascade do |t|
-    t.string "first_name", limit: 20, null: false
-    t.string "last_name",  limit: 20, null: false
-    t.string "telephone",  limit: 50
   end
 
 end
