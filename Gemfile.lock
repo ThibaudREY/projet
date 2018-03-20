@@ -62,10 +62,15 @@ GEM
     faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
+    forecast_io (2.0.2)
+      faraday
+      hashie
+      multi_json
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    hashie (3.5.7)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -179,6 +184,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0)
   bootstrap-sass (~> 3.3.7)
   coffee-rails (~> 4.0.0)
+  forecast_io
   formtastic (~> 3.0)
   jbuilder (~> 2.0)
   nominatim (~> 0.0.6)

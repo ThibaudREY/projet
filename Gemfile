@@ -59,3 +59,5 @@ gem 'puma'
 gem 'nominatim', '~> 0.0.6'
 
 gem 'simplecov', require: false, group: :test
+
+gem 'forecast_io'
