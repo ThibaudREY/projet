@@ -11,6 +11,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
+  - rake db:reset
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - rake
 
