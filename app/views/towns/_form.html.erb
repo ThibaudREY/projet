@@ -1,12 +1,25 @@
-<%= semantic_form_for @town do |f| %>
-  <%= f.inputs do %>
-    <%= f.input :city %>
-    <%= f.input :postcode %>
-    <%= f.input :latitude %>
-    <%= f.input :longitude %>
+<%= form_for(@town) do |f| %>
+  <% if @town.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@town.errors.count, "error") %> prohibited this town from being saved:</h2>
+
+      <ul>
+        <% @town.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
 
-  <%= f.actions do %>
-    <%= f.action :submit, :as => :input %>
-  <% end %>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :postcode %><br>
+    <%= f.number_field :postcode %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>

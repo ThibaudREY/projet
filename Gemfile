@@ -10,8 +10,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-gem 'formtastic', '~> 3.0'
-
 gem 'actionpack', '~> 4.2.7.1'
 
 gem 'actionview', '~> 4.2.7.1'
@@ -61,3 +59,5 @@ gem 'nominatim', '~> 0.0.6'
 gem 'simplecov', require: false, group: :test
 
 gem 'forecast_io'
+
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
