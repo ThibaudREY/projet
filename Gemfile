@@ -61,3 +61,5 @@ gem 'simplecov', require: false, group: :test
 gem 'forecast_io'
 
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
+
+gem 'rack-cors', :require => 'rack/cors'

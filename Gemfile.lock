@@ -98,6 +98,7 @@ GEM
     popper_js (1.12.9)
     puma (3.11.3)
     rack (1.6.9)
+    rack-cors (1.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.7.1)
@@ -192,6 +193,7 @@ DEPENDENCIES
   nominatim (~> 0.0.6)
   pg (~> 0.18)
   puma
+  rack-cors
   rails (~> 4.2.7.1)
   rails_12factor
   sass (~> 3.5.2)
