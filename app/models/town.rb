@@ -4,7 +4,9 @@ class Town < ActiveRecord::Base
   validates_uniqueness_of :city
 
   def weather
-    return ForecastIO.forecast(self.latitude, self.longitude, params: { units: 'si' }).currently
+    ForecastIO.forecast(self.latitude, self.longitude, params: { units: 'si' }).currently
+  rescue StandardError
+    nil
   end
 
   private
