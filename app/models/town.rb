@@ -1,6 +1,7 @@
 class Town < ActiveRecord::Base
   before_validation :geocode
   validates :city, :latitude, :longitude, :presence => true
+  validates_uniqueness_of :city
 
   def weather
     return ForecastIO.forecast(self.latitude, self.longitude, params: { units: 'si' }).currently
